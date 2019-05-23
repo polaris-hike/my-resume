@@ -1,0 +1,266 @@
+
+<!doctype html>
+<html lang="zh-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>邬绪威—面试前端开发—2019</title>
+    <link rel="stylesheet" href="./css/main.css" media="(min-width:426px)">
+    <link rel="stylesheet" href="./css/phone.css" media="(max-width:425px)">
+    <link rel="stylesheet" href="./css/print.css" media="print">
+    <script src="https://at.alicdn.com/t/font_1138462_fc6atg2xbou.js"></script>
+    <style type="text/css">
+    .icon {
+       width: 1em; height: 1em;
+       vertical-align: -0.15em;
+       fill: currentColor;
+       overflow: hidden;
+    }
+</style>
+</head>
+
+<body>
+  <svg aria-hidden="true" style="position: absolute; width: 0px; height: 0px; overflow: hidden;"><symbol id="icon-blog" viewBox="0 0 1024 1024"><path d="M284.643364 492.949109l-76.287477 0 0 105.222483 81.544201 0c42.951231 0 64.460104-17.96107 64.460104-53.924143C351.709829 512.684592 328.469522 495.600495 284.643364 492.949109zM342.510306 423.25377c-1.774413-28.932959-22.36231-43.850717-61.810764-44.725644l-72.343655 0 0 94.709035 72.343655 0C318.395072 471.485261 339.005482 454.815603 342.510306 423.25377zM580.57533 441.674305c-42.974767 0.874927-64.900126 28.932959-65.774029 84.173075 0.873903 50.858318 22.799262 77.163427 65.774029 78.915327 39.447431-1.7519 59.618842-28.494984 60.493769-80.228229C638.441249 473.675136 618.268814 446.055079 580.57533 441.674305zM511.076466 63.73765c-247.744477 0-448.573435 200.806445-448.573435 448.530456 0 247.768013 200.828958 448.573435 448.573435 448.573435 247.746524 0 448.571389-200.805422 448.571389-448.573435C959.647855 264.545118 758.821967 63.73765 511.076466 63.73765zM293.842887 615.277178 187.305455 615.277178 187.305455 358.792643l99.965759 0c49.982368 2.651386 76.725452 23.678282 80.229253 63.146179-2.626827 30.685883-21.925359 50.420343-57.866942 59.181891 42.952254 7.885598 65.75254 30.248931 68.381413 67.067488C375.386064 592.060407 347.329055 614.401228 293.842887 615.277178zM449.046714 613.9653l-21.049409 0 0-255.171634 21.049409 0L449.046714 613.9653zM577.945433 619.218954c-54.385655-2.626827-82.859149-33.313733-85.487-92.057649 1.730411-65.774029 31.56081-99.505271 89.428775-101.279684 52.612265 3.504824 80.232322 35.96512 82.861196 97.315396C663.872454 586.344219 634.937448 618.34505 577.945433 619.218954zM773.91164 682.344666c-30.707372-0.874927-53.048193-9.199523-67.066465-24.991184l7.884574-10.514471c16.647145 11.391445 35.505655 17.522072 56.553017 18.422581 45.581128 0.853437 67.944462-20.195971 67.067488-63.146179l0-36.81958c-11.388375 30.707372-33.751708 45.163619-67.067488 43.412742-47.352471-1.752924-71.906703-31.124881-73.65758-88.138386 2.626827-60.495816 29.370935-92.057649 80.229253-94.686523 24.553209 0.87595 44.726667 14.039761 60.495816 39.447431l0-35.505655 22.363334 0 0 164.403351C864.218412 654.726655 835.283406 684.098613 773.91164 682.344666zM783.111163 442.989253c-41.22082 1.7519-62.686714 27.619034-64.438615 77.579913 1.7519 47.353494 21.48636 72.344678 59.180867 74.973552 35.942607-5.256724 56.116065-27.15957 60.495816-65.75254l0-28.932959C833.970504 469.294362 815.548946 449.997877 783.111163 442.989253z" fill="#222222"></path></symbol><symbol id="icon-github" viewBox="0 0 1024 1024"><path d="M498.0208192 73.18228907c-225.94600853 0-436.78092267 201.64426027-436.78092267 450.3387744 0 199.00494827 135.80010027 367.76915307 314.73624107 427.30974613 22.53893333 4.17727253 34.17569813-9.78881067 34.17569813-21.66134613 0-10.77445867 1.25525547-46.2327008 1.08716054-83.83579307-125.27887573 27.26851733-150.8205984-53.15734613-150.8205984-53.15734613-20.50760213-52.0592704-49.60333547-65.91292587-49.60333547-65.91292587-40.84601707-27.98237653 3.347712-27.31872853 3.347712-27.31872853 45.18592747 3.12940693 69.09800107 46.3396704 69.09800107 46.3396704 40.18127787 68.87969493 105.43164693 48.92331413 131.10653546 37.43390506 4.07030293-29.08045227 15.74854613-48.9800736 28.61218667-60.19332693-100.04932907-11.3769824-205.14478613-50.026848-205.14478613-222.58519787 0-49.14271147 17.59868373-89.3305376 46.34621973-120.887664-4.6717344-11.3769824-20.05898453-57.11413013 4.34864213-119.18160746 0 0 37.824672-12.09193173 123.90682667 46.18249066 35.89703573-9.95253973 74.43556587-14.95718933 112.6979392-15.11982613 38.26128213 0.16372907 76.8500224 5.16728747 112.8038176 15.11982613 85.9806432-58.2733312 123.74200533-46.18249067 123.74200533-46.18249066 24.46438613 62.06747733 9.13061973 107.8613856 4.4588864 119.18160746 28.85559787 31.5571264 46.3396704 71.74495253 46.3396704 120.887664 0 172.9469344-105.38471147 211.0401216-205.6523456 222.14640427 16.16114347 13.96062507 30.56165333 41.39178027 30.56165334 83.39154133 0 60.2500864-0.49009493 108.740064-0.49009494 123.57827734 0 11.98496213 8.07838827 26.00671253 30.9491456 21.60458666C846.67079147 891.01951787 961.94364267 722.249856 961.94364267 523.41409387c0-248.69888107-239.06834133-450.3387744-463.92282347-450.3387744L498.0208192 73.18228907z" fill="#24292E"></path></symbol><symbol id="icon-mail" viewBox="0 0 1024 1024"><path d="M990.2 704.12V313.7l-203.7 203.76 203.7 186.6M646.4 657.5a176.4 176.4 0 0 1-125.52 52.02c-47.4 0-92.04-18.48-125.58-52.02L286.04 548.18 51.56 763.1v36c0 47.1 38.28 85.38 85.32 85.38h768c47.04 0 85.32-38.28 85.32-85.32v-37.2l-233.94-214.32-109.8 109.8" fill="#1296db"></path><path d="M906.62 152h-768C91.64 152 53.42 190.28 53.42 237.32v17.82l373.86 373.98c25.5 25.44 59.4 39.48 95.4 39.48 36.06 0 69.96-14.04 95.4-39.48L992 255.14v-17.82C992 190.28 953.6 152 906.62 152M51.56 313.7v391.5L255.8 518 51.56 313.7" fill="#1296db"></path></symbol><symbol id="icon-wechat" viewBox="0 0 1024 1024"><path d="M465.77813333 640.3264a254.92266667 254.92266667 0 0 1-39.79413333 3.104c-27.11786667 0-53.088-4.2432-77.072-12.0032-12.0608-3.90293333-56.13226667 42.25066667-67.08266667 36.66133333-6.52266667-3.32906667 19.6832-57.888 13.61493334-61.76533333-54.15893333-34.59946667-89.27893333-90.18133333-89.27893334-152.85333333 0-104.912 98.416-189.96053333 219.81866667-189.96053334 114.47253333 0 208.50773333 75.616 218.8704 172.20053334 96.2912 3.7664 172.98026667 70.39893333 172.98026667 152.04373333 0 50.704-29.57546667 95.616-75.05493334 123.27893333-8.56533333 5.21066667 18.54613333 49.14026667 8.944 53.0496-5.91893333 2.4096-48.2592-34.77333333-54.5152-32.9056-19.05493333 5.69173333-39.5776 8.7904-60.9632 8.7904-78.24533333 0-144.9312-41.48266667-170.4672-99.64053333z m-10.05013333-35.93813333a217.21066667 217.21066667 0 0 1-29.744 2.03306666c-25.3504 0-49.48693333-4.35733333-71.4048-12.22933333-2.18666667-0.78506667-9.98186667-3.13706667-14.19946667 0-9.48053333 7.0528-22.19306667 21.6928-22.19306666 21.6928s4.65386667-10.6592 6.21333333-26.22613333c0.7136-7.11253333-10.14186667-12.10026667-12.30933333-13.5648-41.28426667-27.92533333-67.696-74.05866667-67.696-122.01386667 0-84.13546667 81.30026667-152.34133333 181.58933333-152.34133333 93.63946667 0 170.72533333 59.46133333 180.53546667 135.83253333-86.14826667 11.89013333-151.86346667 74.60373333-151.86346667 150.1824 0 5.62133333 0.36266667 11.1712 1.072 16.63466667zM512 989.86666667c263.91893333 0 477.86666667-213.94773333 477.86666667-477.86666667S775.91893333 34.13333333 512 34.13333333 34.13333333 248.08106667 34.13333333 512s213.94773333 477.86666667 477.86666667 477.86666667zM349.52533333 416.42666667c15.83466667 0 28.672-12.83733333 28.672-28.672 0-15.83466667-12.83733333-28.672-28.672-28.672-15.83466667 0-28.672 12.83733333-28.672 28.672 0 15.83466667 12.83733333 28.672 28.672 28.672z m152.91733334 0c15.83466667 0 28.672-12.83733333 28.672-28.672 0-15.83466667-12.83733333-28.672-28.672-28.672-15.83466667 0-28.672 12.83733333-28.672 28.672 0 15.83466667 12.83733333 28.672 28.672 28.672z m66.90133333 133.80266666c10.5568 0 19.11466667-8.55786667 19.11466667-19.11466666 0-10.5568-8.55786667-19.11466667-19.11466667-19.11466667-10.5568 0-19.11466667 8.55786667-19.11466667 19.11466667 0 10.5568 8.55786667 19.11466667 19.11466667 19.11466666z m114.688 0c10.5568 0 19.11466667-8.55786667 19.11466667-19.11466666 0-10.5568-8.55786667-19.11466667-19.11466667-19.11466667-10.5568 0-19.11466667 8.55786667-19.11466667 19.11466667 0 10.5568 8.55786667 19.11466667 19.11466667 19.11466666z" fill="#1afa29"></path></symbol><symbol id="icon-location" viewBox="0 0 1024 1024"><path d="M512 34.52799969C300.19200031 34.52799969 128.49600031 206.22399969 128.49600031 418.03200031c0 235.47199969 228.31999969 441.96799969 350.43199969 558.15999938a47.88799969 47.88799969 0 0 0 66.096 0.12800062c119.21599969-113.21599969 350.496-323.55199969 350.496-558.288C895.50399969 206.22399969 723.80799969 34.52799969 512 34.52799969z m0 527.50400062c-79.536 0-144-64.464-144-144s64.464-144 144-144a144 144 0 0 1 0 288z" fill="#f4ea2a"></path></symbol><symbol id="icon-phone" viewBox="0 0 1024 1024"><path d="M946.45333333 756.05333333c0-105.17333333-85.22666667-190.4-190.4-190.4-102.82666667 0-186.56 81.49333333-190.29333333 183.46666667-65.92-20.37333333-130.02666667-51.30666667-180.16-97.81333333-64.10666667-59.62666667-92.8-128.42666667-103.14666667-192.53333334 98.77333333-7.04 176.74666667-89.38666667 176.74666667-189.86666666 0-105.17333333-85.22666667-190.4-190.4-190.4s-190.4 85.22666667-190.4 190.4v0.64c-6.08 66.77333333 0.42666667 248 195.2 480.85333333 163.30666667 195.30666667 388.90666667 202.98666667 484.90666667 195.94666667 12.26666667-0.21333333 46.29333333-5.54666667 46.29333333-5.54666667l0.53333333-0.85333333c81.28-21.65333333 141.12-95.78666667 141.12-183.89333334z" fill="#ff0000"></path></symbol><symbol id="icon-zhihu" viewBox="0 0 1024 1024"><path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64z m-90.7 477.8l-0.1 1.5c-1.5 20.4-6.3 43.9-12.9 67.6l24-18.1 71 80.7c9.2 33-3.3 63.1-3.3 63.1l-95.7-111.9v-0.1c-8.9 29-20.1 57.3-33.3 84.7-22.6 45.7-55.2 54.7-89.5 57.7-34.4 3-23.3-5.3-23.3-5.3 68-55.5 78-87.8 96.8-123.1 11.9-22.3 20.4-64.3 25.3-96.8H264.1s4.8-31.2 19.2-41.7h101.6c0.6-15.3-1.3-102.8-2-131.4h-49.4c-9.2 45-41 56.7-48.1 60.1-7 3.4-23.6 7.1-21.1 0 2.6-7.1 27-46.2 43.2-110.7 16.3-64.6 63.9-62 63.9-62-12.8 22.5-22.4 73.6-22.4 73.6h159.7c10.1 0 10.6 39 10.6 39h-90.8c-0.7 22.7-2.8 83.8-5 131.4H519s12.2 15.4 12.2 41.7H421.3z m346.5 167h-87.6l-69.5 46.6-16.4-46.6h-40.1V321.5h213.6v387.3zM408.2 611s0-0.1 0 0z" fill="#0084FF"></path><path d="M624.2 705.3l56.8-38.1h45.6-0.1V364.7H596.7v302.5h14.1z" fill="#0084FF"></path></symbol></svg>
+    <div id="page" class="layout">
+        <header>
+            <div class="resume-link">
+                <a href="https://adashuai5.github.io/resume/">简历在线版</a>
+            </div>
+            <h1>邬 绪 威</h1>
+            <p>应聘 Web 前端开发</p>
+        </header>
+        <aside>
+            <div class="avader">
+                <img src="./img/avader.png" alt="头像">
+            </div>
+            <section>
+                <div class="personal">
+                    <h2>基本信息</h2>
+                    <div class="item">
+                        <span>学历</span>
+                        <span>本科</span>
+                    </div>
+                    <div class="item">
+                      <span>专业</span>
+                      <span>金融</span>
+                  </div>
+                    <div class="item">
+                        <span>英语</span>
+                        <span>CET-4</span>
+                    </div>
+                    <div class="item">
+                        <span>毕业时间</span>
+                        <span>2019.6</span>
+                    </div>
+                    <div class="item">
+                        <span>年龄</span>
+                        <span>21</span>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="skills">
+                    <h2>相关技能</h2>
+                    <div class="item">
+                        <p class="keyword">JavaScript/ HTML 5/ CSS 3/ SVG</p>
+                        <p class="rule"><i style="width: 75%"></i></p>
+                    </div>
+                    <div class="item">
+                        <p class="keyword">Vue.js/ Vuex/ Vue Router/ Axios</p>
+                        <p class="rule"><i style="width: 65%"></i></p>
+                    </div>
+                    <div class="item">
+                        <p class="keyword">Node.js</p>
+                        <p class="rule"><i style="width: 40%"></i></p>
+                    </div>
+                    <div class="item">
+                        <p class="keyword">Webpack/ Parcel/ Npm Script</p>
+                        <p class="rule"><i style="width: 70%"></i></p>
+                    </div>
+                    <div class="item">
+                        <p class="keyword">ES6/ Sass、Less/ Babel</p>
+                        <p class="rule"><i style="width: 73%"></i></p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="contact">
+                    <h2>联系方式</h2>
+                    <div class="item">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-phone"></use>
+                        </svg>
+                        <span>18062402176</span>
+                    </div>
+                    <div class="item">
+                        <svg class="icon" aria-hidden="true" style="fill:red;">
+                            <use xlink:href="#icon-wechat"></use>
+                        </svg>
+                        <span>18062402176</span>
+                    </div>
+                    <div class="item">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-mail"></use>
+                        </svg>
+                        <span>2509165479@qq.com</span>
+                    </div>
+                    <div class="item">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-location"></use>
+                        </svg>
+                        <span>武汉</span>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="more">
+                    <h2>了解更多</h2>
+                    <div class="item">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-book1"></use>
+                        </svg>
+                        <span class="link"><a href="https://www.jianshu.com/u/2afa3b41726a" target="_blank">个人博客</a></span>
+                    </div>
+                    <div class="item">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-github"></use>
+                        </svg>
+                        <span class="link"><a href="https://github.com/wuxuweilalala" target="_blank">访问 GitHub</a></span>
+                    </div>
+                </div>
+            </section>
+        </aside>
+        <main>
+            <section>
+                <h2>项目经历</h2>
+                <div class="item">
+                    <h3>CNode 社区</h3>
+                    <img src="./img/cnode.png" alt="cnode-ada">
+                    <ul>
+                        <li>
+                            <strong>项目介绍：</strong>该项目使用<span class="highlight">Vue</span>还原 CNode 官方社区，项目调用 CNode
+                            官方社区提供的 API，以<span class="highlight">Vue CLI </span> 创建项目模版，使用
+                            <span class="highlight">Axios </span>获取数据，使用 <span class="highlight">Vue-Router</span> 进行<span class="highlight">前端路由的切换及传参</span>，使用<span
+                                class="highlight">
+                                watch 监听路由的变化</span>，Webpack 打包。
+                        </li>
+                        <li><strong>技术栈：Vue CLI/ Vue2/ Vue Router/ Axios/ ES6/ Npm/ SCSS</strong></li>
+
+                        <li><strong>项目源码：</strong><a
+                                href="https://github.com/wuxuweilalala/vue-cnode" target="_blank">github.com/wuxuweilalala/vue-cnode</a></li>
+                        <li><strong>浏览链接：</strong><a
+                                href="https://wuxuweilalala.github.io/vue-cnode/dist/index.html#/" target="_blank">wuxuweilalala.github.io/vue-cnode</a></li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <h3>vue仿写有赞商城</h3>
+                    <img src="./img/youzan.png" alt="cnode-ada" height="500px">
+                    <ul>
+                        <li>
+                            <strong>项目介绍：</strong>该项目使用<span class="highlight">Vue框架</span>仿写的有赞商城，实现了首页，分类
+                            ，购物车以及收货地址管理等功能，项目使用<span class="highlight">easy-mock </span> mock的数据，使用
+                            <span class="highlight">Axios </span>获取数据，项目主要技术栈有 <span class="highlight">Vue</span>，
+                            <span class="highlight">vue-cli</span>，<span class="highlight">webpack</span>，<span class="highlight">axios</span>，
+                            <span class="highlight">vue-router</span>，<span class="highlight">vuex</span>，<span class="highlight">mixins</span>。使用到的ui库有<span class="highlight">mint-ui</span>，第三方插件有：<span class="highlight">swiper</span>，<span class="highlight">qs</span>，<span class="highlight">volecity</span>。
+                        </li>
+                        <li><strong>技术栈：Vue CLI/ Vue2/ Vue Router/ Axios/ ES6/ Vuex/ Mixins</strong></li>
+
+                        <li><strong>项目源码：</strong><a
+                                href="https://github.com/wuxuweilalala/vue-youzan" target="_blank">github.com/wuxuweilalala/vue-youzan</a></li>
+                        <li><strong>浏览链接：</strong><a
+                                href="https://wuxuweilalala.github.io/vue-youzan/dist/index.html" target="_blank">wuxuweilalala.github.io/vue-youzan</a></li>
+                    </ul>
+                </div>                
+                <div class="item">
+                    <h3>多人共享博客</h3>
+                    <img src="./img/blog.png" alt="mini-programs">
+                    <ul>
+                        <li>
+                            <strong>项目介绍：</strong>该项目使用<span class="highlight">Vue</span>实现，用<span class="highlight">Vue-router</span>实现页面跳转，<span class="highlight">Vuex</span>
+                            共享登录状态，功能：登录注册、主界面显示所有用户设置可主页显示的博客、博客详情、本人博客列表、用户的博客列表、创建博客、删除博客。
+                        </li>
+                        <li><strong>技术栈：Vue/ Vue-Cli/ Vue-Router/ Axios/ ES6/ Less</strong></li>
+                        <li><strong>项目源码：</strong><a
+                                href="https://github.com/wuxuweilalala/vue-blog" target="_blank">github.com/wuxuweilalala/vue-blog</a>
+                        </li>
+                        <li><strong>浏览链接：</strong><a
+                               href="https://wuxuweilalala.github.io/vue-blog/dist/index.html#/" target="_blank">wuxuweilalala.github.io/vue-blog</a></li>
+                    </ul>
+                </div>
+                <div class="item">
+                        <h3>响应式大屏Webapp音乐播放器</h3>
+                        <img src="./img/music.png" alt="music">
+                        <ul>
+                            <li>
+                                <strong>项目介绍：</strong>该项目是一款响应式大屏Webapp音乐播放器，具有<span class="highlight">音乐播放，暂停，换曲功能，选取歌曲的类型，歌曲进度条和时间以及歌词的实现</span>，例如热歌，经典老歌，90后等。
+                            使用<span class="highlight">媒体查询以及vh</span>实现响应式大屏，调用音乐相关api使用<span class="highlight">ajax</span>获取数据，使用<span class="highlight">jQuery</span>将其渲染到页面上。
+                            </li>
+                            <li><strong>技术：HTML5/ CSS3/ jQuery/ Ajax/ 响应式</strong></li>
+                            <li><strong>项目源码：</strong><a
+                                    href="https://github.com/wuxuweilalala/musicdemo" target="_blank">github.com/wuxuweilalala/musicdemo</a></li>
+                            <li><strong>浏览链接：</strong><a
+                                    href="https://wuxuweilalala.github.io/musicdemo/" target="_blank">wuxuweilalala.github.io/musicdemo</a></li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <h3>Github前端排行</h3>
+                        <img height="500px" src="./img/movie.jpg" alt="Vue-Blog">
+                        <ul>
+                            <li>
+                                <strong>项目介绍：</strong>该项目是一个移动端的单页面应用。使用<span
+                                    class="highlight">Ajax</span>获取三个接口，得到相应的数据，渲染到页面上。其中使用了<span
+                                    class="highlight">HTML5，CSS3，JavaScript，jQuery</span>技术栈。实现了前端项目排行,前端高产用户排行, 项目搜索功能。
+                            </li>
+                            <li><strong>项目源码：</strong><a
+                                    href="https://github.com/wuxuweilalala/doubanmovie" target="_blank">github.com/wuxuweilalala/doubanmovie</a></li>
+                            <li><strong>浏览链接：</strong><a
+                                    href="https://wuxuweilalala.github.io/doubanmovie/  " target="_blank">wuxuweilalala.github.io/doubanmovie</a></li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <h3>轮播demo</h3>
+                        <img height="500px" src="./img/carousel.png " alt="Vue-Blog">
+                        <ul>
+                            <li>
+                                <strong>项目介绍：</strong>该项目是用<span class="highlight">jQuery</span>实现的页面上2个轮播的小demo。使用的是组件的形式。具有点击左右按钮，
+                                相应的切换图片的功能。
+                            </li>
+                            <li><strong>项目源码：</strong><a
+                                    href="https://github.com/wuxuweilalala/dbcarousel" target="_blank">github.com/wuxuweilalala/doubanmovie</a></li>
+                            <li><strong>浏览链接：</strong><a
+                                    href="https://wuxuweilalala.github.io/dbcarousel/index.html#" target="_blank">wuxuweilalala.github.io/doubanmovie</a></li>
+                        </ul>
+                    </div>
+            </section>
+            <div class="line"></div>
+            <section>
+                <h2>掌握技能</h2>
+                <p>熟练 <span class="highlight">HTML5&CSS3 </span>的页面布局，熟悉<span class="highlight">flex布局</span>及其常用操作，能独立制作精美页面</p>
+                <p>熟悉原生 JavaScript，理解<span class="highlight">原型</span>,<span class="highlight">闭包</span>,<span class="highlight">异步流程控制</span>,<span class="highlight">面向对象</span>等重要概念，熟悉 <span class="highlight">ES6 </span>常用新特性。
+                <p>熟悉 Vue 常用功能及命令，如<span class="highlight">组件、Vue-Router、Vuex，生命周期，双向绑定</span>等，能够使用 Vue 全家桶开发项目
+                </p>
+                <p>掌握<span class="highlight">Npm、Git、Webpack、Less、VsCode </span> 等开发辅助工具，熟悉<span class="highlight">模块化</span>  开发流程。</p>
+                <p>有移动端开发经验，会使用<span class="highlight">REM、vw/ vh、响应式</span> 等技术制作适配手机设备的页面</p>
+                <p>了解<span class="highlight"> HTTP </span>相关知识，了解常见的<span class="highlight"> Web 性能优化</span>方案</p>
+                <p><span class="highlight">流畅阅读</span> 英文文档，以官方文档为<span class="highlight">第一选择</span>。<span class="highlight">科学上网</span>面向Google、StackOverflow编程</p>
+                <p>拥有较强的踩坑和 <span class="highlight">填坑能力</span>，对前端抱有热情。</p>   
+            </section>
+            <section>
+                <h2>关于我</h2>
+                <div class="experience">
+                    <p>2015年9月-2019 年 6 月毕业于华中科技大学文华学院，在校期间成绩优异，于2015年军训期间获军训优秀学员，2016-2017获两次三等奖学金。<br>
+                        痴迷新技术，喜欢承担有技术难度的工作，爱分享，善于知识总结梳理。年轻，不怕加班</p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <a href="http://www.freepik.com/">Designed by M.salama / Freepik</a>
+        </footer>
+    </div>
+    <script src="//at.alicdn.com/t/font_963522_ysjp62qwni.js"></script>
+</body>
+
+</html>
