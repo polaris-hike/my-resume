@@ -81,7 +81,7 @@ aside .avader {
 }
 
 aside .avader>img {
-  width: 180px;
+  max-width: 180px;
   height: 180px;
   border-radius: 50%;
   background: cornflowerblue;

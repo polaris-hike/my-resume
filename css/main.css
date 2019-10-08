@@ -90,6 +90,9 @@ aside .avader>img {
   border-radius: 50%;
   background: cornflowerblue;
 }
+.mar-left {
+  margin-left: 160px;
+}
 
 aside section {
   margin: 30px 15px 0px 45px;
@@ -205,7 +208,7 @@ main section .item h3 {
 
 main section .item img {
   margin-top: 5px;
-  width: 100%;
+  max-width: 100%;
   border: 1px solid #ddd;
   border-style: dashed;
   border-radius: 5px;
